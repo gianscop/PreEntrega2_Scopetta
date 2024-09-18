@@ -10,53 +10,65 @@
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <img src="../imagenes/logo2.jpeg" alt="logo de FutbolMatch">
+    <header >
+        <div class="container d-flex justify-content-between align-items-center py-3">
+            <div class="logo">
+                <img src="../imagenes/logo2.jpeg" alt="logo de FutbolMatch" class="img-fluid">
+            </div>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a href="../index.html" class="nav-link text-white">Inicio</a></li>
+                    <li class="nav-item"><a href="../pages/buscar.html" class="nav-link text-white">Buscar Partido</a></li>
+                    <li class="nav-item"><a href="../pages/crear.html" class="nav-link text-white">Crear Partido</a></li>
+                    <li class="nav-item"><a href="../pages/perfil.html" class="nav-link text-white">Mi Perfil</a></li>
+                    <li class="nav-item"><a href="../pages/noticias.html" class="nav-link text-white">Noticias</a></li>
+                    <li class="nav-item"><a href="../pages/contacto.html" class="nav-link text-white">Contacto</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../pages/buscar.html">Buscar Partido</a></li>
-                <li><a href="../pages/crear.html">Crear Partido</a></li>
-                <li><a href="../pages/perfil.html">Mi Perfil</a></li>
-                <li><a href="../pages/noticias.html">Noticias</a></li>
-                <li><a href="../pages/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
     </header>
     
-    <main>
-        <section class="search">
-            <br>
-            <h2>Buscar un Partido</h2>
-            <form action="#">
-                <label for="location">Ubicación:</label>
-                <input type="text" id="location" name="location" placeholder="Ingresa una ciudad, barrio, club, cancha...">
-                
-                <label for="date">Fecha:</label>
-                <input type="date" id="date" name="date">
-                
-                <label for="level">Nivel de Juego:</label>
-                <select id="level" name="level">
-                    <option value="beginner">Principiante</option>
-                    <option value="intermediate">Intermedio</option>
-                    <option value="advanced">Avanzado</option>
-                </select>
-                
-                <button type="submit" class="btn-primary">Buscar</button>
-            </form>
-        </section>
+    <main class="pt-5">
+        <div class="container">
+            <section class="search">
+                <h2 class="text-center mb-4">Buscar un Partido</h2>
+                <form action="#" class="form">
+                    <div class="mb-3">
+                        <label for="location" class="form-label">Ubicación:</label>
+                        <input type="text" id="location" name="location" class="form-control" placeholder="Ingresa una ciudad, barrio, club, cancha...">
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="date" class="form-label">Fecha:</label>
+                        <input type="date" id="date" name="date" class="form-control">
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="level" class="form-label">Nivel de Juego:</label>
+                        <select id="level" name="level" class="form-select">
+                            <option value="beginner">Principiante</option>
+                            <option value="intermediate">Intermedio</option>
+                            <option value="advanced">Avanzado</option>
+                        </select>
+                    </div>
+                    
+                    <button type="submit" class="btn-primary w-100">Buscar</button>
+                </form>
+            </section>
+        </div>
     </main>
 
-    <footer>
-        <p>&copy; 2024 FutbolMatch. Todos los derechos reservados.</p>
-        <div class="social">
-            <a href="https://www.facebook.com" target="_blank">Facebook</a>
-            <a href="https://www.twitter.com" target="_blank">Twitter</a>
-            <a href="https://www.instagram.com" target="_blank">Instagram</a>
+    <footer class="py-3">
+        <div class="container text-center">
+            <p>&copy; 2024 FutbolMatch. Todos los derechos reservados.</p>
+            <div class="social">
+                <a href="https://www.facebook.com" target="_blank" class="text-white mx-2">Facebook</a>
+                <a href="https://www.twitter.com" target="_blank" class="text-white mx-2">Twitter</a>
+                <a href="https://www.instagram.com" target="_blank" class="text-white mx-2">Instagram</a>
+            </div>
         </div>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
