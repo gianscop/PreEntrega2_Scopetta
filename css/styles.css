@@ -204,7 +204,10 @@ header {
   nav ul {
     display: flex; /* Mantiene el menú en línea */
     flex-direction: column; /* Cambia a una columna en pantallas pequeñas */
-    align-items: center; /* Centra los elementos del menú */
+    align-items: center; /* Centra los elementos del menú horizontalmente */
+    padding: 0; /* Elimina el padding por defecto */
+    margin: 0; /* Elimina el margin por defecto */
+    width: 100%; /* Asegura que ocupe todo el ancho */
   }
   nav ul li {
     margin: 5px 0; /* Reduce el espacio entre elementos */
@@ -214,6 +217,7 @@ header {
   nav ul li a {
     padding: 10px 0; /* Ajusta el padding */
     font-size: 0.9rem; /* Reduce el tamaño de la fuente en pantallas pequeñas */
+    display: block; /* Hace que el enlace ocupe todo el ancho del contenedor */
   }
   .featured-matches .grid {
     grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
