@@ -19,19 +19,20 @@
 /* Ajustes de responsividad */
 @media (max-width: 768px) {
     nav ul {
-        display: flex; /* Mantiene el menú en línea */
-        flex-direction: column; /* Cambia a una columna en pantallas pequeñas */
-        align-items: center; /* Centra los elementos del menú horizontalmente */
-        padding: 0; /* Elimina el padding por defecto */
-        margin: 0; /* Elimina el margin por defecto */
-        width: 100%; /* Asegura que ocupe todo el ancho */
-    }
-
-    nav ul {
         display: block; /* Cambia a un menú vertical */
         padding: 0; /* Elimina el padding por defecto */
         margin: 0; /* Elimina el margin por defecto */
-        width: auto; /* Hace que el ancho sea automático */
+        width: 100%; /* Hace que el ancho sea completo */
+        position: absolute; /* Posiciona el menú fuera del flujo normal */
+        left: 0; /* Alinea el menú a la izquierda */
+        top: 100%; /* Posiciona el menú justo debajo del header */
+        background: rgba(0, 0, 0, 0.8); /* Fondo oscuro para el menú */
+        z-index: 1000; /* Asegura que el menú esté encima de otros elementos */
+        display: none; /* Oculta el menú por defecto */
+    }
+
+    nav.active ul {
+        display: block; /* Muestra el menú cuando está activo */
     }
 
     nav ul li {
@@ -44,6 +45,7 @@
         padding: 10px; /* Espacio alrededor del texto del enlace */
         font-size: 0.9rem; /* Ajusta el tamaño de la fuente */
         display: block; /* Hace que el enlace ocupe todo el ancho del contenedor */
+        color: white; /* Asegúrate de que el texto sea legible */
     }
     
     .featured-matches .grid {
