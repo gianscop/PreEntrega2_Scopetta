@@ -202,11 +202,18 @@ header {
 /* Ajustes de responsividad */
 @media (max-width: 768px) {
   nav ul {
-    display: block; /* Menú vertical en pantallas pequeñas */
+    display: flex; /* Mantiene el menú en línea */
+    flex-direction: column; /* Cambia a una columna en pantallas pequeñas */
+    align-items: center; /* Centra los elementos del menú */
   }
   nav ul li {
-    display: block; /* Los elementos del menú se apilan verticalmente */
-    margin-bottom: 10px; /* Espacio entre elementos del menú en vertical */
+    margin: 5px 0; /* Reduce el espacio entre elementos */
+    width: 100%; /* Hace que cada elemento ocupe todo el ancho disponible */
+    text-align: center; /* Centra el texto del menú */
+  }
+  nav ul li a {
+    padding: 10px 0; /* Ajusta el padding */
+    font-size: 0.9rem; /* Reduce el tamaño de la fuente en pantallas pequeñas */
   }
   .featured-matches .grid {
     grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
