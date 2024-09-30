@@ -204,28 +204,18 @@ header {
   nav ul {
     display: block; /* Cambia a un menú vertical */
     padding: 0; /* Elimina el padding por defecto */
-    margin: 0; /* Elimina el margin por defecto */
-    width: 100%; /* Hace que el ancho sea completo */
-    position: absolute; /* Posiciona el menú fuera del flujo normal */
-    left: 0; /* Alinea el menú a la izquierda */
-    top: 100%; /* Posiciona el menú justo debajo del header */
-    background: rgba(0, 0, 0, 0.8); /* Fondo oscuro para el menú */
-    z-index: 1000; /* Asegura que el menú esté encima de otros elementos */
-    display: none; /* Oculta el menú por defecto */
-  }
-  nav.active ul {
-    display: block; /* Muestra el menú cuando está activo */
+    margin: 0 auto; /* Centra el menú horizontalmente */
+    width: fit-content; /* Ajusta el ancho al contenido del menú */
+    text-align: center; /* Centra el texto dentro del menú */
   }
   nav ul li {
     display: block; /* Asegura que cada elemento esté en una nueva línea */
     margin: 5px 0; /* Espacio entre elementos */
-    text-align: left; /* Alinea el texto a la izquierda */
+    text-align: center; /* Alinea el texto de los elementos al centro */
   }
-  nav ul li a {
-    padding: 10px; /* Espacio alrededor del texto del enlace */
-    font-size: 0.9rem; /* Ajusta el tamaño de la fuente */
-    display: block; /* Hace que el enlace ocupe todo el ancho del contenedor */
-    color: white; /* Asegúrate de que el texto sea legible */
+  /* Margen superior para el body en móviles */
+  body {
+    margin-top: 120px; /* Ajusta el margen superior según sea necesario */
   }
   .featured-matches .grid {
     grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
