@@ -202,38 +202,43 @@ header {
 /* Ajustes de responsividad */
 @media (max-width: 768px) {
   nav {
-    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro semi-transparente */
-    padding: 10px; /* Espacio alrededor del menú */
-    border-radius: 8px; /* Bordes redondeados para un acabado más suave */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Sombra para darle profundidad */
+    background-color: rgba(0, 0, 0, 0.9); /* Fondo oscuro */
+    padding: 10px; /* Reduce el padding */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Sombra suave */
+    overflow: hidden; /* Evita desbordes */
+    margin-top: -20px; /* Mueve la nav bar hacia arriba */
   }
   nav ul {
-    display: flex; /* Utiliza flexbox para organizar elementos */
-    flex-direction: column; /* Coloca los elementos en columna */
-    padding: 0; /* Elimina el padding por defecto */
-    margin: 0; /* Elimina el margin por defecto */
-    align-items: center; /* Centra los elementos horizontalmente */
+    display: flex; /* Usa flexbox */
+    flex-direction: column; /* Organiza en columnas */
+    padding: 0; /* Sin padding extra */
+    margin: 0; /* Sin margen extra */
+    align-items: center; /* Centra horizontalmente */
+    width: 100%; /* Ocupa todo el ancho */
   }
   nav ul li {
-    display: block; /* Asegura que cada elemento esté en una nueva línea */
-    margin: 10px 0; /* Espacio entre elementos */
-    text-align: center; /* Centra el texto de los elementos */
-    width: 100%; /* Hace que cada item ocupe el ancho completo */
+    width: 100%; /* Cada item ocupa todo el ancho */
+    margin: 5px 0; /* Espacio entre elementos */
+    text-align: center; /* Centra el texto */
   }
   nav ul li a {
     display: block; /* Hace que el enlace ocupe todo el ancho */
-    padding: 15px; /* Espacio alrededor del texto del enlace */
-    font-size: 1.1rem; /* Tamaño de fuente más grande */
+    padding: 12px; /* Espacio alrededor del texto */
+    font-size: 1.1rem; /* Tamaño de fuente */
     color: white; /* Color del texto */
     text-decoration: none; /* Sin subrayado */
-    transition: background-color 0.3s; /* Transición suave para el fondo */
+    border: 1px solid transparent; /* Para efectos de hover */
+    border-radius: 4px; /* Bordes redondeados */
+    transition: background-color 0.3s, border-color 0.3s; /* Transiciones suaves */
   }
   nav ul li a:hover {
-    background-color: rgba(255, 255, 255, 0.2); /* Efecto hover en el enlace */
+    background-color: rgba(255, 255, 255, 0.2); /* Fondo claro al pasar el mouse */
+    border-color: rgba(255, 255, 255, 0.5); /* Cambio de borde al pasar el mouse */
   }
-  /* Margen superior para el body en móviles */
+  /* Ajuste del margen superior para el body en móviles */
   body {
-    margin-top: 120px; /* Ajusta el margen superior según sea necesario */
+    margin-top: 80px; /* Ajusta el margen superior según sea necesario */
   }
   .featured-matches .grid {
     grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
