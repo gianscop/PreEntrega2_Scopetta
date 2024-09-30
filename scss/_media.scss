@@ -23,20 +23,20 @@
         padding: 0; /* Elimina el padding por defecto */
         margin: 0 auto; /* Centra el menú horizontalmente */
         width: fit-content; /* Ajusta el ancho al contenido del menú */
-        text-align: center; /* Centra el texto dentro del menú */
+        text-align: left; /* Alinea el texto dentro del menú a la izquierda */
     }
 
     nav ul li {
         display: block; /* Asegura que cada elemento esté en una nueva línea */
         margin: 5px 0; /* Espacio entre elementos */
-        text-align: center; /* Alinea el texto de los elementos al centro */
+        text-align: left; /* Alinea el texto de los elementos al lado izquierdo */
     }
 
     /* Margen superior para el body en móviles */
     body {
         margin-top: 120px; /* Ajusta el margen superior según sea necesario */
     }
-
+    
     .featured-matches .grid {
         grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
     }
